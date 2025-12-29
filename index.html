@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>醫學研究工具箱 | 研究計畫書範本</title>
+    <style>
+        /* --- 核心設計風格：黑底、白字、橘標題、黃重點 --- */
+        :root {
+            --bg-color: #000000;
+            --text-color: #FFFFFF;
+            --primary-color: #FF8C00; /* 深橘色 */
+            --highlight-color: #FFD700; /* 黃色 */
+            --card-bg: #1A1A1A;
+            --font-family: 'PingFang TC', 'Microsoft JhengHei', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* 容器設定 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 標題樣式 */
+        h1, h2, h3 {
+            color: var(--primary-color);
+            font-weight: 700; /* 粗體 */
+            letter-spacing: 1px;
+        }
+        
+        h1 { font-size: 2.5rem; text-align: center; margin-bottom: 10px; }
+        h2 { border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-top: 40px; }
+
+        /* 重點文字高亮 */
+        .highlight {
+            color: var(--bg-color);
+            background-color: var(--highlight-color);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        /* 商品卡片區 */
+        .product-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+            border: 2px solid #333;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            border-color: var(--primary-color);
+        }
+
+        .price {
+            font-size: 2rem;
+            color: var(--highlight-color);
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        /* 按鈕樣式 (扁平化風格) */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 15px 40px;
+            border-radius: 50px; /* 圓角 */
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #FF4500; /* 懸停變深 */
+        }
+
+        /* 政策與 Footer */
+        .policy-section {
+            font-size: 0.9rem;
+            color: #AAA;
+            background: #111;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+        }
+
+        /* 手機版優化 */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .btn { width: 100%; box-sizing: border-box; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <span style="font-size: 3rem;">📄</span>
+            </div>
+            <h1>醫學研究工具箱</h1>
+            <p style="text-align: center; font-size: 1.2rem;">
+                專為研究人員打造的 <span class="highlight">數位效率工具</span> 與文件範本
+            </p>
+        </header>
+
+        <section id="products">
+            <h2>精選範本</h2>
+            
+            <div class="product-card">
+                <h3>IRB 研究計畫書標準格式範本 (2025版)</h3>
+                <p style="color: #ccc; margin: 20px 0;">
+                    不想從頭開始排版？這份範本整理了標準的 IRB 申請架構，
+                    包含文獻回顧、研究方法與預期成果的標準段落配置。
+                    <br><br>
+                    格式：Word (.docx) / PDF <br>
+                    適用對象：醫學研究生、臨床醫師、研究助理
+                </p>
+                <div class="price">NT$ 150</div>
+                
+                <button class="btn" onclick="alert('感謝您的興趣！本站金流系統正在維護中，請稍後再試。')">
+                    立即購買範本
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <h2>關於作者</h2>
+            <p>
+                我是資訊工程碩士生，專注於 <span class="highlight">醫療影像 AI</span> 與系統整合。
+                在協助多項臨床研究案的過程中，我整理了這套高效率的文件範本，
+                希望能幫助忙碌的醫療人員節省文書時間，專注於核心研究。
+            </p>
+        </section>
+
+        <section class="policy-section">
+            <h3 style="color: #fff; margin-top:0;">退換貨政策與服務條款</h3>
+            <p>
+                1. <strong>數位商品性質</strong>：本站販售之商品為數位內容（如下載版文件、電子書等），一經購買並發送下載連結後，即視為已完成服務。
+            </p>
+            <p>
+                2. <strong>退款規定</strong>：依據消費者保護法第 19 條及通訊交易解除權合理例外情事適用準則，本站之數位商品<span class="highlight">不適用七日鑑賞期</span>。購買前請務必確認商品內容說明，售出後恕不接受退款。
+            </p>
+            <p>
+                3. <strong>使用授權</strong>：購買之範本僅供購買者個人學術研究或工作使用，嚴禁轉售、公開散佈或作為商業營利範本販售。
+            </p>
+        </section>
+
+        <footer>
+            <p>Copyright © 2025 Medical Research Tools. All rights reserved.</p>
+            <p>
+                聯絡信箱：<strong>coffee.ewa@gmail.com</strong> <br>
+                聯絡電話：<strong>0975-665-509</strong>
+                聯絡人姓名:<strong>林小姐</strong>
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
