@@ -194,8 +194,9 @@ html_code = """
     <div class="footer-text">
         <p>Copyright © 2025 Medical Research Tools. All rights reserved.</p>
         <p>
-            聯絡信箱：<strong>your_email@example.com</strong> <br>
-            聯絡電話：<strong>09xx-xxx-xxx</strong>
+            聯絡信箱：<strong>coffee.ewa@gmail.com</strong> <br>
+            聯絡電話：<strong>0975-665-509</strong>
+            聯絡人：<strong>林小姐</strong>
         </p>
     </div>
 </div>
@@ -203,3 +204,4 @@ html_code = """
 
 # 3. 渲染 HTML
 st.markdown(html_code, unsafe_allow_html=True)
+
