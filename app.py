@@ -9,7 +9,8 @@ st.set_page_config(
 )
 
 # 2. 定義 HTML/CSS 內容
-html_content = """
+# 注意：這裡面是純 HTML 字串，請直接複製，不要隨意斷行
+html_code = """
 <style>
     /* --- 核心設計風格：黑底、白字、橘標題、黃重點 --- */
     :root {
@@ -169,5 +170,6 @@ html_content = """
 </div>
 """
 
-# 3. 關鍵指令：渲染 HTML
-st.markdown(html_content, unsafe_allow_html=True)
+# 3. 關鍵渲染指令 (一定要有 unsafe_allow_html=True)
+st.markdown(html_code, unsafe_allow_html=True)True)
+
