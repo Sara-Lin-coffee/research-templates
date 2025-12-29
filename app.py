@@ -2,7 +2,7 @@ import streamlit as st
 
 # 1. 設定頁面配置
 st.set_page_config(
-    page_title="醫學研究工具箱",
+    page_title="研究工具箱",
     page_icon="📄",
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -192,5 +192,6 @@ html_code = """
 """
 
 st.markdown(html_code, unsafe_allow_html=True)
+
 
 
