@@ -12,7 +12,6 @@ st.set_page_config(
 # 注意：以下引號內就是純 HTML，請不要在裡面加上 markdown 的 ``` 符號
 html_code = """
 <style>
-    /* --- 核心設計風格：白底、深灰字、專業藍 --- */
     :root {
         --bg-color: #FFFFFF;           /* 純白背景 */
         --text-color: #333333;         /* 深灰文字 */
@@ -22,25 +21,21 @@ html_code = """
         --font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
     }
 
-    /* 強制覆蓋 Streamlit 的預設背景 */
     .stApp {
         background-color: var(--bg-color) !important;
         color: var(--text-color) !important;
     }
     
-    /* 隱藏 Streamlit 預設介面 (Header, Footer, Menu) */
     header[data-testid="stHeader"] {display: none;}
     footer {display: none;}
     #MainMenu {display: none;}
     
-    /* 移除頂部空白，讓版面更緊湊 */
     .block-container {
         padding-top: 0rem !important;
         padding-bottom: 2rem !important;
         max-width: 100% !important;
     }
 
-    /* 網頁內容容器 */
     .custom-container {
         max-width: 900px;
         margin: 0 auto;
@@ -49,7 +44,6 @@ html_code = """
         line-height: 1.8;
     }
 
-    /* 標題樣式 */
     h1 { 
         font-size: 2.8rem; 
         text-align: center; 
@@ -75,7 +69,6 @@ html_code = """
 
     h3 { color: #2c3e50; font-weight: 600; }
 
-    /* 重點文字高亮 */
     .highlight {
         background-color: var(--highlight-color);
         color: var(--primary-color);
@@ -84,20 +77,19 @@ html_code = """
         font-weight: bold;
     }
 
-    /* 商品卡片 (清新風格：淺灰底 + 陰影) */
     .product-card {
         background-color: var(--secondary-color);
         border-radius: 12px;
         padding: 40px;
         margin: 30px 0;
         text-align: center;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* 輕微陰影 */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
         border: 1px solid #eaeaea;
         transition: transform 0.2s;
     }
     
     .product-card:hover {
-        transform: translateY(-5px); /* 滑鼠移過去會浮起來 */
+        transform: translateY(-5px);
         box-shadow: 0 10px 15px rgba(0,0,0,0.1);
     }
 
@@ -108,7 +100,6 @@ html_code = """
         font-weight: bold;
     }
 
-    /* 按鈕樣式 (藍色圓角) */
     .btn {
         display: inline-block;
         background-color: var(--primary-color);
@@ -124,7 +115,6 @@ html_code = """
     }
     .btn:hover { background-color: #0056b3; }
 
-    /* 政策區域 (字體縮小) */
     .policy-section {
         font-size: 0.9rem;
         color: #666;
@@ -135,7 +125,6 @@ html_code = """
         margin-top: 60px;
     }
 
-    /* 頁尾 */
     .footer-text {
         text-align: center;
         margin-top: 50px;
@@ -202,6 +191,6 @@ html_code = """
 </div>
 """
 
-# 3. 渲染 HTML
 st.markdown(html_code, unsafe_allow_html=True)
+
 
