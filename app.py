@@ -1,6 +1,6 @@
 import streamlit as st
 
-# 1. 設定頁面配置
+# 1. 設定頁面配置 (這行必須是第一行)
 st.set_page_config(
     page_title="醫學研究工具箱",
     page_icon="📄",
@@ -8,7 +8,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# 2. 定義 HTML/CSS 內容 (直接放在變數中，避免讀不到檔案)
+# 2. 定義 HTML/CSS 內容
 html_content = """
 <style>
     /* --- 核心設計風格：黑底、白字、橘標題、黃重點 --- */
@@ -27,7 +27,7 @@ html_content = """
         color: var(--text-color) !important;
     }
     
-    /* 隱藏 Streamlit header 與 footer */
+    /* 隱藏 Streamlit 預設介面 */
     header[data-testid="stHeader"] {display: none;}
     footer {display: none;}
     #MainMenu {display: none;}
@@ -169,5 +169,5 @@ html_content = """
 </div>
 """
 
-# 3. 渲染 HTML
+# 3. 關鍵指令：渲染 HTML
 st.markdown(html_content, unsafe_allow_html=True)
