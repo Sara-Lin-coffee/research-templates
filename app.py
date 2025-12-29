@@ -22,26 +22,28 @@ html_code = """
 
 <div class="main-box">
 <div style="text-align: center; font-size: 3rem; margin-bottom: 10px;">📄</div>
-<h1>醫學研究工具箱</h1>
+<h1>研究工具箱</h1>
 <p class="sub">專為研究人員打造的數位效率工具</p>
 
 <div class="card">
-<h3 style="color:#333;">IRB 研究計畫書標準格式範本 (2025版)</h3>
-<p style="color:#666;">包含文獻回顧、研究方法與預期成果的標準段落配置。</p>
+<h3 style="color:#333;">研究計畫書標準格式範本 (2025版)</h3>
+<p style="color:#666;">包含文獻回顧、研究方法與預期成果的標準段落配置及個段落內容提示。</p>
 <div class="price">NT$ 150</div>
 <button class="btn" onclick="alert('系統維護中，請稍後再試。')">立即購買範本</button>
 </div>
 
 <div class="footer">
-<p>Copyright © 2025 Medical Research Tools.</p>
-<p>聯絡信箱：your_email@example.com</p>
-<p>聯絡電話：09xx-xxx-xxx</p>
+<p>Copyright © 2025 Research Tools.</p>
+<p>聯絡信箱：coffee.ewa@example.com</p>
+<p>聯絡電話：0975-665-509</p>
+<p>聯絡人：林小姐</p>
 </div>
 </div>
 """
 
 # 3. 渲染 (確保 unsafe_allow_html=True)
 st.markdown(html_code, unsafe_allow_html=True)
+
 
 
 
