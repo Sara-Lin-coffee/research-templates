@@ -276,8 +276,9 @@ st.markdown("""
 <div style="text-align: left; margin-top: 40px; color: #888; font-size: 0.8rem; border-top: 1px solid #E0E0E0; padding-top: 20px;">
     <strong>Research Tools</strong> © 2026<br><br>
     聯絡信箱：coffee.ewa@gmail.com <br>
-    聯絡電話：0917-xxx-xxx
+    聯絡電話：0975-665-509
 </div>
 """, unsafe_allow_html=True)
+
 
 
